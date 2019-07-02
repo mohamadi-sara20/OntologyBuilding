@@ -1,0 +1,1767 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#"
+     xml:base="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy">
+        <term:description>An ontology about vertebrates and some of their features</term:description>
+        <owl:author>Sara Shahmohamadi</owl:author>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#author"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#description"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#eats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#eats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <term:description xml:lang="en">A relation between animals, which animal preys on and eats which.</term:description>
+        <rdfs:label xml:lang="de">isst</rdfs:label>
+        <rdfs:label xml:lang="fr">mange</rdfs:label>
+        <rdfs:label xml:lang="fa">می‌خورد</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#BodyTemperature"/>
+        <term:description>A relation specifying what the body temperature is.</term:description>
+        <rdfs:label xml:lang="fr">a la température corporelle</rdfs:label>
+        <rdfs:label xml:lang="de">hat Körpertemperatur</rdfs:label>
+        <rdfs:label xml:lang="fa">دمای بدن برابر با</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasConservationStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasConservationStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus"/>
+        <term:description>A property specifying what the conservation status of an animal is.</term:description>
+        <rdfs:label xml:lang="fr">a le statue de conservation</rdfs:label>
+        <rdfs:label xml:lang="de">hat Erhaltungszustand</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای وضعیت بقای</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasDiet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasDiet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet"/>
+        <term:description>A property specifying food habits of animals.</term:description>
+        <term:description xml:lang="de">hat Diät</term:description>
+        <rdfs:label xml:lang="fr">a un régime</rdfs:label>
+        <rdfs:label xml:lang="fa">پیرو رژیم غذایی</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasHabitat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasHabitat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Habitat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem"/>
+        <rdfs:label xml:lang="fr">a le système respiratoire</rdfs:label>
+        <rdfs:label xml:lang="de">hat Atmungssystem</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای دستگاه تنفسی</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSkinCover -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSkinCover">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#SkinCovering"/>
+        <term:description>A property specifying animals&apos; body coverings.</term:description>
+        <rdfs:label xml:lang="fr">a le revêtement corporel</rdfs:label>
+        <rdfs:label xml:lang="de">hatKörperbedeckung</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای پوشش بدنی</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTameness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTameness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness"/>
+        <term:description>A relation specifying tameness of animals.</term:description>
+        <rdfs:label xml:lang="fr">a la domicilité</rdfs:label>
+        <rdfs:label xml:lang="de">hatZahmheit</rdfs:label>
+        <rdfs:label xml:lang="fa">واجد خصوصیت رامی</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonomicRrank -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonomicRrank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <term:description>Representing taxonomic ranks of a given creature; i.e. is a class, a phylum, a kingdom etc.</term:description>
+        <rdfs:label xml:lang="fr">a le rang taxonomique</rdfs:label>
+        <rdfs:label xml:lang="de">hatTaxonomischenRang</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای رتبه آرایه‌شناختی</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#livesInClimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#livesInClimate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+        <term:description>A property specifying what kind of climate(s) animals live in.</term:description>
+        <rdfs:label xml:lang="de">lebt im Klima</rdfs:label>
+        <rdfs:label xml:lang="fr">vit dans le climat</rdfs:label>
+        <rdfs:label xml:lang="fa">ساکن در اقلیم</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#extinctIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#extinctIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageBodyLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageBodyLength">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <term:description>A data property specifying the average length of animals.</term:description>
+        <rdfs:label xml:lang="fr">aUneLongeurMoyenne</rdfs:label>
+        <rdfs:label xml:lang="de">hatdurchschnittlicheLänge</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای میانگین طول بدن</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <term:description>A data property specifying average height of animals.</term:description>
+        <rdfs:label xml:lang="fr">aUneHauteurMoyenne</rdfs:label>
+        <rdfs:label xml:lang="de">hatdurchschnittlicheHöhe</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای میانگین قد</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageLifespan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasAverageLifespan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <term:description>A data property specifying average lifespan of animals.</term:description>
+        <rdfs:label xml:lang="fr">aUneDuréeDeVieMoyenne</rdfs:label>
+        <rdfs:label xml:lang="de">hatEineDurchschnittlicheLebensdauer</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای میانگین طول عمر</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasClassName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasClassName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the class names of animals.</term:description>
+        <rdfs:label xml:lang="de">KlassenameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeClasseEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام رده</rdfs:label>
+    </owl:DatatypeProperty>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasClassName"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying color(s) of animals.</term:description>
+        <rdfs:label xml:lang="fr">estDeCouleur</rdfs:label>
+        <rdfs:label xml:lang="de">vonFarbe</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای رنگ‌[های]</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasCommanName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasCommanName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the common names of animals.</term:description>
+        <rdfs:label xml:lang="de">gebräuchlicherNameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomCommunEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای اسم عامیانه</rdfs:label>
+    </owl:DatatypeProperty>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasCommanName"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasEnglishName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasEnglishName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasCommanName"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasPersianName"/>
+        <term:description>A data property specifying common English names for animals.</term:description>
+        <rdfs:label xml:lang="de">englischerGebräuchlicherNameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomCommunAnglaisEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای اسم عامیانه انگلیسی</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasFamilyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the Family names of animals.</term:description>
+        <rdfs:label xml:lang="de">FamilienameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeFamilleEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام خانواده</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasGenusName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasGenusName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the genus names of animals.</term:description>
+        <rdfs:label xml:lang="de">gattungnameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeGenreEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام سرده</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasKingdomName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasKingdomName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the kingdom names of animals.</term:description>
+        <rdfs:label xml:lang="de">ReichnameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeRègneEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام فرمانرو</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasOrderName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasOrderName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the order names of animals.</term:description>
+        <rdfs:label xml:lang="fr">nomDeOrdreEst</rdfs:label>
+        <rdfs:label xml:lang="de">ordnungnameIst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام راسته</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasPersianName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasPersianName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasCommanName"/>
+        <term:description>A data property specifying common Farsi name for animals.</term:description>
+        <rdfs:label xml:lang="de">gebräuchlicherFarsiName</rdfs:label>
+        <rdfs:label xml:lang="fr">nomCommunPersanEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای اسم عامیانه فارسی</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasPhylumName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasPhylumName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the phylum names of animals.</term:description>
+        <rdfs:label xml:lang="de">StammnameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeEmbranchementEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام شاخه</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSpeciesName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSpeciesName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the species names of animals.</term:description>
+        <rdfs:label xml:lang="de">artnameIst</rdfs:label>
+        <rdfs:label xml:lang="fr">nomDeEspèceEst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام گونه</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <term:description>A data property specifying the taxonomic names of animals.</term:description>
+        <rdfs:label xml:lang="fr">nomTaxonomiqueEst</rdfs:label>
+        <rdfs:label xml:lang="de">taxonomischernameIst</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای نام آرایه‌شناختی</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTopSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTopSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <term:description>A data property specifying the top speed of animals.</term:description>
+        <rdfs:label xml:lang="fr">aLaVitesseMaximale</rdfs:label>
+        <rdfs:label xml:lang="de">hatHöchstgeschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="fa">دارای حداکثر سرعت</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Amphibian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Amphibian">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <term:description>Representing different kinds of amphibians</term:description>
+        <rdfs:label xml:lang="de">Amphibie</rdfs:label>
+        <rdfs:label xml:lang="fr">amphibie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DomainThing"/>
+        <term:description>Representing all living things categorized under the kingdom Animalia.</term:description>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+        <rdfs:label xml:lang="fr">Animal</rdfs:label>
+        <rdfs:label xml:lang="de">Tier</rdfs:label>
+        <rdfs:label xml:lang="fa">حیوان</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Bird -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Bird">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSkinCover"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <term:description>Representing different kinds of birds</term:description>
+        <rdfs:label xml:lang="de">Vogel</rdfs:label>
+        <rdfs:label xml:lang="fr">oiseau</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#BodyTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#BodyTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <term:description>This is a class representing body temperature of animals. It has two individuals: changing and constant. Constant body temperature includes to warm blooded creatures and changing body temperature indludes cold blooded ones.</term:description>
+        <rdfs:label xml:lang="de">Körpertemperatur</rdfs:label>
+        <rdfs:label xml:lang="fr">température corporelle</rdfs:label>
+        <rdfs:label xml:lang="fa">دمای بدن</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Cold"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Dry-Desert"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Polar-Tundra"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Temperate"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Cold"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Dry-Desert"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Polar-Tundra"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Temperate"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <term:description>Representing different types of climates animals could live in. Class Climate includes four instances: Arctic, Tropical, Moderate, Cold.</term:description>
+        <rdfs:label xml:lang="de">Klima</rdfs:label>
+        <rdfs:label xml:lang="fr">climat</rdfs:label>
+        <rdfs:label xml:lang="fa">اقلیم</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ColdBlooded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ColdBlooded">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#WarmBlooded"/>
+        <rdfs:label xml:lang="en">ColdBlooded</rdfs:label>
+        <rdfs:label xml:lang="fr">ectothermique</rdfs:label>
+        <rdfs:label xml:lang="de">ektothermisch</rdfs:label>
+        <rdfs:label xml:lang="fa">خونسرد</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <rdfs:label xml:lang="fa">وضعیت بقا</rdfs:label>
+        <rdfs:seeAlso xml:lang="de">Erhaltungszustand</rdfs:seeAlso>
+        <rdfs:seeAlso>Representing the conservation status of animals.</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="fr">le statue de conservation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Carnivore"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Omnivore"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Carnivore"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Omnivore"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <rdfs:label xml:lang="fa">رژیم غذایی</rdfs:label>
+        <rdfs:seeAlso xml:lang="de">Diät</rdfs:seeAlso>
+        <rdfs:seeAlso>Representing animal diets.</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="fr">régime</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DomainThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DomainThing">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <term:description>Representing our main concept of interest and class hierarchy: Animals, or to be more specific vertebrates.</term:description>
+        <rdfs:label>DomainThing</rdfs:label>
+        <owl:prefLabel>Domain Thing</owl:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CompletelyExtinct"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ExtinctInTheWild"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus"/>
+        <term:description>Representing the conservation status(es) considered as disappeared. It has two instances: One representing extinct as in extinct in the wild and the other, as in completely extinct.</term:description>
+        <rdfs:label xml:lang="de">ausgestorben</rdfs:label>
+        <rdfs:label xml:lang="fr">disparu</rdfs:label>
+        <rdfs:label xml:lang="fa">منقرض‌شده</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Fish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Gills"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+        <term:description>Representating  different kinds of fishes</term:description>
+        <rdfs:label xml:lang="de">Fisch</rdfs:label>
+        <rdfs:label xml:lang="fr">poisson</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Habitat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Habitat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Aquatic"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Aquatic"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationDependent"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LeastConcern"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NearThreatened"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus"/>
+        <term:description>Representing the coservation status(es) considered as safe, i.e. plenty of animals exist if the conservation status of an animal is of type lower risk. It includes only one instance: LeastConcern.</term:description>
+        <rdfs:label xml:lang="fr">abondant</rdfs:label>
+        <rdfs:label xml:lang="de">reichlich</rdfs:label>
+        <rdfs:label xml:lang="fa">فراوان</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSkinCover"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <term:description xml:lang="fr">Representing different kinds of mammals</term:description>
+        <rdfs:label xml:lang="de">Säugetier</rdfs:label>
+        <rdfs:label xml:lang="fr">mammifère</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Marsupial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Marsupial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal"/>
+        <term:description>Representing one of the three main groups of living mammals; whose distinctive characteristic is that most of the young are carried in a pouch. Well-known marsupials include kangaroos, wallabies, koalas, possums, opossums, wombats, and Tasmanian devils.</term:description>
+        <rdfs:label xml:lang="de">Beuteltier</rdfs:label>
+        <rdfs:label xml:lang="fr">marsupial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Monotreme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Monotreme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal"/>
+        <term:description xml:lang="de">Representing one of the three main groups of living mammals; typified by structural differences in their brains, jaws, digestive tract, reproductive tract, and other body parts compared to the more common mammalian types. In addition they lay eggs rather than bear live young, but like all mammals, the female monotremes nurse their young with milk.</term:description>
+        <rdfs:label xml:lang="de">Kloakentiere</rdfs:label>
+        <rdfs:label xml:lang="fr">Monotremata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NonVertebrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NonVertebrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+        <term:description>We represent any animal who is not categorized as vertebrate with this class.</term:description>
+        <rdfs:label xml:lang="fr">non-vertébré</rdfs:label>
+        <rdfs:label xml:lang="fa">غیرمهره‌دار</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Placental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Placental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal"/>
+        <term:description>Representing one of the three main groups of living mammals; whose distinctive feature compared to the other two categories lies in the fact that the fetus is carried in the uterus of its mother to a relatively late stage of development.</term:description>
+        <rdfs:label xml:lang="de">Höhere Säugetiere</rdfs:label>
+        <rdfs:label xml:lang="fr">Placentalia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Reptile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Reptile">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Lungs"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <term:description>Representing different reptiles</term:description>
+        <rdfs:label xml:lang="de">Reptil</rdfs:label>
+        <rdfs:label xml:lang="fr">reptile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <term:description>Representing respiratory system of animals.</term:description>
+        <rdfs:label xml:lang="de">Atmungssystem</rdfs:label>
+        <rdfs:label xml:lang="fr">système respiratoire</rdfs:label>
+        <rdfs:label xml:lang="fa">دستگاه تنفسی</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#SkinCovering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#SkinCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <term:description xml:lang="de">Representing sking covering of animals.</term:description>
+        <rdfs:label xml:lang="de">Körperbedeckung</rdfs:label>
+        <rdfs:label xml:lang="fr">revêtement corporel</rdfs:label>
+        <rdfs:label xml:lang="fa">پوشش بدن</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Domestic"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tamable"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Wild"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Domestic"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tamable"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Wild"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <term:description xml:lang="de">Representing animals&apos; status of tameness.</term:description>
+        <rdfs:label xml:lang="de">Zahmheit</rdfs:label>
+        <rdfs:label xml:lang="fr">docilité</rdfs:label>
+        <rdfs:label xml:lang="fa">رامی</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Classe"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Family"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Genus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Kingdom"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Order"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Phylum"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Species"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Classe"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Family"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Genus"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Kingdom"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Order"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Phylum"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Species"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <term:description>Representing taxonomic rank of animals.</term:description>
+        <rdfs:label xml:lang="fr">rang taxonomique</rdfs:label>
+        <rdfs:label xml:lang="de">taxonomischer Rang</rdfs:label>
+        <rdfs:label xml:lang="fa">رتبه آرایه‌شناختی</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CriticallyEndangered"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Endangered"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vulnerable"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus"/>
+        <term:description>Representing the conservation status(es) considered as guarded and Threatened. It includes three instances: CriticallyEndangered, Endangered, NearEndangered.</term:description>
+        <rdfs:label xml:lang="de">geschützt</rdfs:label>
+        <rdfs:label xml:lang="fr">protégé</rdfs:label>
+        <rdfs:label xml:lang="fa">محافظت‌شده</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DataDeficient"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NotEvaluated"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ValueThing">
+        <term:description>Representing classes which describe information about our main concept of interest; aka animals and specifically vertebrates.</term:description>
+        <rdfs:label>ValueThing</rdfs:label>
+        <owl:prefLabel>Value Thing</owl:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vertebrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <term:description>Vertebrates comprise all species of animals within the subphylum Vertebrata (i.e. chordates with backbones). Vertebrates represent the overwhelming majority of the phylum Chordata, with currently about 69,276 species described.</term:description>
+        <rdfs:label xml:lang="de">Wirbeltier</rdfs:label>
+        <rdfs:label xml:lang="fr">vertébré</rdfs:label>
+        <rdfs:label xml:lang="fa">مهره‌دار</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#WarmBlooded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#WarmBlooded">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Animal"/>
+        <rdfs:label xml:lang="en">WarmBlooded</rdfs:label>
+        <rdfs:label xml:lang="fr">endothermique</rdfs:label>
+        <rdfs:label xml:lang="de">endothermisch</rdfs:label>
+        <rdfs:label xml:lang="fa">خونگرم</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Aquatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Aquatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Habitat"/>
+        <rdfs:label xml:lang="fr">aquatique</rdfs:label>
+        <rdfs:label xml:lang="de">aquatisch</rdfs:label>
+        <rdfs:label xml:lang="fa">آبی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Carnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Carnivore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet"/>
+        <rdfs:label xml:lang="de">Fleischfresser</rdfs:label>
+        <rdfs:label xml:lang="fr">carnivore</rdfs:label>
+        <rdfs:label xml:lang="fa">گوشتخوار</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#BodyTemperature"/>
+        <rdfs:label xml:lang="fr">variable</rdfs:label>
+        <rdfs:label xml:lang="de">Ändern</rdfs:label>
+        <rdfs:label xml:lang="fa">متغیر</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Classe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Classe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Klasse</rdfs:label>
+        <rdfs:label xml:lang="fr">classe</rdfs:label>
+        <rdfs:label xml:lang="fa">رده</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Cold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Cold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+        <rdfs:label xml:lang="fr">froid</rdfs:label>
+        <rdfs:label xml:lang="de">kalt</rdfs:label>
+        <rdfs:label xml:lang="fa">سردسیر</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CompletelyExtinct -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CompletelyExtinct">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct"/>
+        <rdfs:label xml:lang="fr">complètement éteint</rdfs:label>
+        <rdfs:label xml:lang="de">völlig ausgestorben</rdfs:label>
+        <rdfs:label xml:lang="fa">انقراض کامل</rdfs:label>
+        <owl:prefLabel>EX</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationDependent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationDependent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+        <rdfs:label xml:lang="fr">dépendant de la conservation</rdfs:label>
+        <rdfs:label xml:lang="de">erhaltungsabhängig</rdfs:label>
+        <owl:prefLabel>CD</owl:prefLabel>
+        <owl:prefLabel xml:lang="fa">نیازمند محافظت</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#BodyTemperature"/>
+        <rdfs:label xml:lang="de">Konstante</rdfs:label>
+        <rdfs:label xml:lang="fr">constant</rdfs:label>
+        <rdfs:label xml:lang="fa">ثابت</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CriticallyEndangered -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CriticallyEndangered">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+        <rdfs:label xml:lang="fr">en danger critique</rdfs:label>
+        <rdfs:label xml:lang="de">kritisch gefährdet</rdfs:label>
+        <rdfs:label xml:lang="fa">شدیدا در معرض خطر</rdfs:label>
+        <owl:prefLabel>CR</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DataDeficient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DataDeficient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown"/>
+        <rdfs:label xml:lang="de">Daten mangelhaft</rdfs:label>
+        <rdfs:label xml:lang="fr">données insuffisantes</rdfs:label>
+        <rdfs:label xml:lang="fa">داده ناکافی</rdfs:label>
+        <owl:prefLabel>DD</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Domestic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Domestic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness"/>
+        <rdfs:label xml:lang="fr">domestique</rdfs:label>
+        <rdfs:label xml:lang="de">inländisch</rdfs:label>
+        <rdfs:label xml:lang="fa">اهلی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Dry-Desert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Dry-Desert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Endangered -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Endangered">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+        <rdfs:label xml:lang="fr">en danger</rdfs:label>
+        <rdfs:label xml:lang="de">gefährdet</rdfs:label>
+        <rdfs:label xml:lang="fa">در معرض خطر</rdfs:label>
+        <owl:prefLabel>EN</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ExtinctInTheWild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ExtinctInTheWild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct"/>
+        <rdfs:label xml:lang="de">in freier Wildbahn ausgestorben</rdfs:label>
+        <rdfs:label xml:lang="fr">éteint à l&apos;état sauvage</rdfs:label>
+        <rdfs:label xml:lang="fa">انقراض در حیات وحش</rdfs:label>
+        <owl:prefLabel>EW</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Familie</rdfs:label>
+        <rdfs:label xml:lang="fr">famille</rdfs:label>
+        <rdfs:label xml:lang="fa">خانواده</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#SkinCovering"/>
+        <rdfs:label xml:lang="de">Feder</rdfs:label>
+        <rdfs:label xml:lang="fr">plume</rdfs:label>
+        <rdfs:label xml:lang="fa">پر</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Genus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Genus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Gattung</rdfs:label>
+        <rdfs:label xml:lang="fr">genre</rdfs:label>
+        <rdfs:label xml:lang="fa">سرده</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Gills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Gills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem"/>
+        <rdfs:label xml:lang="de">Kiemen</rdfs:label>
+        <rdfs:label xml:lang="fr">branchies</rdfs:label>
+        <rdfs:label xml:lang="fa">آبشش</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#SkinCovering"/>
+        <rdfs:label xml:lang="de">Haar</rdfs:label>
+        <rdfs:label xml:lang="fr">cheveux</rdfs:label>
+        <rdfs:label xml:lang="fa">مو</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet"/>
+        <rdfs:label xml:lang="de">Pflanzenfresser</rdfs:label>
+        <rdfs:label xml:lang="fr">herbivore</rdfs:label>
+        <rdfs:label xml:lang="fa">گیاه‌خوار</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Kingdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Kingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Reich</rdfs:label>
+        <rdfs:label xml:lang="fr">Règne</rdfs:label>
+        <rdfs:label xml:lang="fa">فرمانرو</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LeastConcern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LeastConcern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+        <rdfs:label xml:lang="de">am wenigsten Sorge</rdfs:label>
+        <rdfs:label xml:lang="fr">moindre préoccupation</rdfs:label>
+        <rdfs:label xml:lang="fa">کمترین نگرانی</rdfs:label>
+        <owl:prefLabel>LC</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Lungs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Lungs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#RespiratorySystem"/>
+        <rdfs:label xml:lang="de">Lunge</rdfs:label>
+        <rdfs:label xml:lang="fr">poumons</rdfs:label>
+        <rdfs:label xml:lang="fa">شش</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Moderate">
+        <rdfs:label xml:lang="fr">modéré</rdfs:label>
+        <rdfs:label xml:lang="de">mäßig</rdfs:label>
+        <rdfs:label xml:lang="fa">معتدل</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NearThreatened -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NearThreatened">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+        <rdfs:label xml:lang="de">fast bedroht</rdfs:label>
+        <rdfs:label xml:lang="fr">quasi menacée</rdfs:label>
+        <rdfs:label xml:lang="fa">در آستانه خطر</rdfs:label>
+        <owl:prefLabel>NT</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Nomascus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Nomascus">
+        <hasConservationStatus rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NotEvaluated"/>
+        <hasDiet rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore"/>
+        <hasHabitat rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial"/>
+        <livesInClimate rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Temperate"/>
+        <livesInClimate rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical"/>
+        <hasClassName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mammalia</hasClassName>
+        <hasEnglishName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nomascus</hasEnglishName>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hylobatidae</hasFamilyName>
+        <hasGenusName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nomascus</hasGenusName>
+        <hasKingdomName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animalia</hasKingdomName>
+        <hasOrderName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primates</hasOrderName>
+        <hasPersianName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">نوماسکوس</hasPersianName>
+        <hasPhylumName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chordata</hasPhylumName>
+        <hasTaxonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nomascus</hasTaxonName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NotEvaluated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NotEvaluated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown"/>
+        <rdfs:label xml:lang="de">nicht bewertet</rdfs:label>
+        <rdfs:label xml:lang="fr">non évalué</rdfs:label>
+        <rdfs:label xml:lang="fa">بررسی‌نشده</rdfs:label>
+        <owl:prefLabel>NE</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Omnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Omnivore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Diet"/>
+        <rdfs:label xml:lang="de">Omnivore</rdfs:label>
+        <rdfs:label xml:lang="fr">omnivore</rdfs:label>
+        <rdfs:label xml:lang="fa">همه‌چیز‌خوار</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Ordnung</rdfs:label>
+        <rdfs:label xml:lang="fr">ordre</rdfs:label>
+        <rdfs:label xml:lang="fa">راسته</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Phylum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Phylum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="fr">Embranchement</rdfs:label>
+        <rdfs:label xml:lang="de">Stamm</rdfs:label>
+        <rdfs:label xml:lang="fa">شاخه</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Polar-Tundra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Polar-Tundra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+        <rdfs:label xml:lang="de">Polar-Tundra</rdfs:label>
+        <rdfs:label xml:lang="fr">polaire/toundra</rdfs:label>
+        <rdfs:label xml:lang="fa">سرددشت/قطبی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Species -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Species">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#TaxonomicRank"/>
+        <rdfs:label xml:lang="de">Art</rdfs:label>
+        <rdfs:label xml:lang="fr">Espèce</rdfs:label>
+        <rdfs:label xml:lang="fa">گونه</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tamable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tamable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness"/>
+        <rdfs:label xml:lang="fr">domptable</rdfs:label>
+        <rdfs:label xml:lang="de">zähmbar</rdfs:label>
+        <rdfs:label xml:lang="fa">قابل‌تربیت</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Temperate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Temperate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Habitat"/>
+        <rdfs:label xml:lang="fr">Terrestre</rdfs:label>
+        <rdfs:label xml:lang="de">terrestrisch</rdfs:label>
+        <rdfs:label xml:lang="fa">زمینی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Climate"/>
+        <rdfs:label xml:lang="fr">tropical</rdfs:label>
+        <rdfs:label xml:lang="de">tropisch</rdfs:label>
+        <rdfs:label xml:lang="fa">استوایی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vulnerable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vulnerable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+        <rdfs:label xml:lang="de">verletzlich</rdfs:label>
+        <owl:prefLabel>VU</owl:prefLabel>
+        <owl:prefLabel xml:lang="fr">vulnérable</owl:prefLabel>
+        <owl:prefLabel xml:lang="fa">آسیب‌پذیر</owl:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Wild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Wild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tameness"/>
+        <rdfs:label xml:lang="fr">sauvage</rdfs:label>
+        <rdfs:label xml:lang="de">wild</rdfs:label>
+        <rdfs:label xml:lang="fa">وحشی</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Bird"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Fish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Mammal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Reptile"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Extinct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LowerRisk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Threatened"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Unknown"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Marsupial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Monotreme"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Placental"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Aquatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Carnivore"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Changing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Classe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Cold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CompletelyExtinct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ConservationDependent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Constant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#CriticallyEndangered"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#DataDeficient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Domestic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Endangered"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#ExtinctInTheWild"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Family"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Feather"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Genus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Gills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Hair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Herbivore"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Kingdom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#LeastConcern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Lungs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Moderate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NearThreatened"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#NotEvaluated"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Omnivore"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Order"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Phylum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Polar-Tundra"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Species"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tamable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Terrestrial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Tropical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Vulnerable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#Wild"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#eats"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasBodyTemperature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasConservationStatus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasDiet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasRespiratorySystem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasSkinCover"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTameness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#hasTaxonomicRrank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sara/ontologies/VertebrateTaxonomy#livesInClimate"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
